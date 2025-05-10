@@ -19,8 +19,12 @@ body {
   font-size: 16px;
   font-family: var(--font);
   color: var(--dark);
-  overflow-x: hidden;
-height: fit-content;
+  height: fit-content;
+  overflow-x: hidden !important;
+}
+
+main {
+    overflow-x: hidden !important;
 }
 
 .container {
@@ -241,48 +245,48 @@ height: fit-content;
 /* howToSection */
 
 .howToSection {
-    margin-top: 20%;
+  margin-top: 20%;
 }
 
 .joinContainer {
-    position: relative;
-    margin-top: 32px;
+  position: relative;
+  margin-top: 32px;
 }
 
 .joinBox {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .mobileArrow1 {
-    margin-left: 50%;
-    transform: translateX(-50%);
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 .joinBox h3 {
-    font-size: 32px;
-    font-weight: 900;
-    color: var(--blue);
-    text-align: center;
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--blue);
+  text-align: center;
 }
 
 .joinBox p {
-    text-align: center;
+  text-align: center;
 }
 
 hr {
-    margin-block: 32px 10px;
-    color: var(--blue);
-    opacity: .5;
-    border: .2px solid var(--blue);
+  margin-block: 32px 10px;
+  color: var(--blue);
+  opacity: 0.5;
+  border: 0.2px solid var(--blue);
 }
 
 footer {
-    padding-block: 22px;
+  padding-block: 22px;
 }
 
 footer p {
-    font-size: 12px;
-    text-align: center;
+  font-size: 12px;
+  text-align: center;
 }
 
 @media screen and (min-width: 560px) {
