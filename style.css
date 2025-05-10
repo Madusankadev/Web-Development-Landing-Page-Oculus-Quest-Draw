@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink: #d7237e;
+  --blue: #20a0dd;
+  --dark: #2a2a2c;
+  --light: #fff;
+
+  --font: "DM Sans", sans-serif;
+}
+
+body {
+  font-size: 16px;
+  font-family: var(--font);
+  color: var(--dark);
+  overflow-x: hidden;
+height: fit-content;
+}
+
+.container {
+  max-width: 1200px;
+  width: calc(100% - 2.2rem);
+  margin-inline: auto;
+}
+
+.lineBreak650 {
+  display: none;
+}
+
+.btn {
+  padding: 8px 40px 8px 20px;
+  font-family: var(--font);
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 32px;
+  border: 2px solid var(--pink);
+  background: url(./imgs/arrow.png) no-repeat 90% center transparent;
+  background-size: 24px;
+  color: var(--pink);
+  cursor: pointer;
+}
+
+.title {
+  text-align: center;
+  font-size: 24px;
+  letter-spacing: 1;
+}
+
+/* herSection */
+
+.herSection {
+  /* height: 100vh; */
+  position: relative;
+}
+
+.logoBox {
+  margin-block: 22px;
+}
+
+.heroImage {
+  position: absolute;
+  top: -22px;
+  right: -1rem;
+  height: 50vh;
+}
+
+.heroTextContent {
+  margin-top: calc(40vh + 20px);
+  padding-left: 5%;
+}
+
+.heroTextContent > p {
+  font-size: 16px;
+}
+
+.heroTextContent > h1 {
+  margin-top: 16px;
+  margin-bottom: 5%;
+  font-size: 45px;
+  line-height: 1;
+  color: var(--pink);
+}
+
+/* countdownSection */
+
+.countdownSection {
+  margin-top: 60px;
+}
+
+.countdownContainer {
+  margin-top: 32px;
+  display: grid;
+}
+
+.countdownBox {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--pink);
+  border-bottom: 3px solid var(--pink);
+  padding-block: 35px;
+}
+
+.countdownBox > h5 {
+  font-size: 55px;
+  font-weight: 900;
+  color: var(--pink);
+  text-align: center;
+  display: block;
+  line-height: 1;
+}
+
+.countdownBox > p {
+  font-size: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.countdownSection > div > p {
+  font-size: 18px;
+  line-height: 1.4;
+  text-align: center;
+  margin-top: 22px;
+  font-weight: 300;
+}
+
+/* specSection */
+
+.specSection {
+  position: relative;
+  margin-top: 60px;
+}
+
+.girlImagine {
+  height: 350px;
+  display: block;
+  margin-inline: auto;
+}
+
+.whyOculusContent {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.whyOculusContent > div:nth-child(1) {
+  order: 2;
+}
+
+.girl {
+  position: relative;
+  height: 350px;
+  z-index: -2;
+}
+
+.whyOculusContent ul,
+.whyOculusContent li {
+  list-style: none;
+  font-size: 16px;
+  max-width: calc(100% - 2rem);
+  margin-inline: auto;
+}
+
+.whyOculusContent ul {
+  margin-top: 22px;
+  margin-bottom: 32px;
+}
+
+.whyOculusContent li {
+  margin-top: 12px;
+}
+
+.whyOculusContent .highlight {
+  color: var(--blue);
+}
+
+/* formSection */
+
+.formSection {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  position: relative;
+}
+
+.darkBg {
+  position: absolute;
+  background: var(--dark);
+  height: calc(100% + 80px);
+  width: 200vw;
+  z-index: -1;
+  top: -80px;
+  left: -15%;
+  transform: rotate(-10deg);
+}
+
+.formSection .title {
+  color: var(--light);
+  margin-bottom: 26px;
+}
+
+.formSection .highlight {
+  color: var(--blue);
+}
+
+.formSection input {
+  width: 100%;
+  margin-top: 16px;
+  font-size: 16px;
+  font-family: var(--font);
+  padding: 10px 20px;
+  border-radius: 28px;
+  border: 2px solid var(--light);
+  outline: none;
+  background: transparent;
+  color: var(--light);
+  font-weight: 300;
+}
+
+.formSection input:focus {
+  border-color: var(--blue);
+}
+
+.formSection form div {
+  margin-top: 18px;
+  display: flex;
+  justify-content: end;
+}
+
+.leftAngle {
+  position: absolute;
+  height: 160px;
+  left: 0;
+  top: -20%;
+}
+
+/* howToSection */
+
+.howToSection {
+    margin-top: 20%;
+}
+
+.joinContainer {
+    position: relative;
+    margin-top: 32px;
+}
+
+.joinBox {
+    margin-bottom: 16px;
+}
+
+.mobileArrow1 {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.joinBox h3 {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--blue);
+    text-align: center;
+}
+
+.joinBox p {
+    text-align: center;
+}
+
+hr {
+    margin-block: 32px 10px;
+    color: var(--blue);
+    opacity: .5;
+    border: .2px solid var(--blue);
+}
+
+footer {
+    padding-block: 22px;
+}
+
+footer p {
+    font-size: 12px;
+    text-align: center;
+}
+
+@media screen and (min-width: 560px) {
+  .break550 {
+    display: none;
+  }
+
+  .countdownSection {
+    margin-top: 140px;
+  }
+
+  .whyOculusContent li {
+    font-size: 18px;
+  }
+
+  .leftAngle {
+    top: -10%;
+    left: -2%;
+    transform: rotate(4deg);
+  }
+}
+
+/* responsive */
+
+@media screen and (min-width: 560px) {
+  .heroTextContent {
+    margin-top: 0;
+  }
+
+  .lineBreak650 {
+    display: block;
+  }
+
+  .title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .leftAngle {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .heroImage {
+    height: 70vh;
+  }
+
+  .heroTextContent {
+    margin-top: 8%;
+  }
+
+  .countdownSection {
+    margin-top: 30%;
+  }
+
+  .countdownContainer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .countdownSection > div > p {
+    padding-inline: 15%;
+  }
+
+  .girlImagine {
+    height: 200px;
+    margin-left: 60%;
+  }
+
+  .whyOculusContent {
+    flex-direction: row;
+  }
+
+  .whyOculusContent > div {
+    width: 50%;
+  }
+
+  .whyOculusContent > div:nth-child(2) {
+    order: 2;
+  }
+
+  .whyOculusContent .title {
+    text-align: left;
+    padding-left: 22px;
+  }
+
+  .girl {
+    padding-left: 15%;
+  }
+
+  .formSection > .container {
+    display: flex;
+  }
+
+  .formSection > .container > div {
+    width: 50%;
+  }
+
+  .formSection .title {
+    margin-top: 80px;
+  }
+
+  .leftAngle {
+    height: 250px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .heroImage {
+    height: 90vh;
+  }
+
+  .heroTextContent > h1 {
+    font-size: 60px;
+  }
+
+  .heroTextContent > p {
+    font-size: 18px;
+  }
+
+  .girl {
+    padding-left: 20%;
+  }
+
+  .formSection .title {
+    margin-top: 100px;
+  }
+
+  .formSection .darkBg {
+    transform: rotate(-5deg);
+  }
+
+  .leftAngle {
+    top: -15%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .heroTextContent > h1 {
+    font-size: 75px;
+  }
+
+  .heroImage {
+    height: 110vh;
+  }
+
+  .countdownSection {
+    margin-top: 18%;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .countdownSection > div > p {
+    padding-inline: 22%;
+  }
+
+  .girl {
+    padding-left: 25%;
+  }
+
+  .leftAngle {
+    height: 280px;
+  }
+}
